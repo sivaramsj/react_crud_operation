@@ -12,10 +12,13 @@ export default function AddPost({onAdd}) {
 
 
   return (
+    <>
+    <h2 className='new-user-title'>Add New Post</h2>
     <form onSubmit={handleOnSubmit} className="dark-theme-form">
         <input placeholder="Title" name="title" className="dark-theme-input" />
         <input placeholder="Body" name="body" className="dark-theme-input"/>
         <button onSubmit={handleOnSubmit} className='btn btn-primary'>Add</button>
     </form>
+    </>
   );
 }

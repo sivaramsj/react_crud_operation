@@ -1,3 +1,11 @@
+.new-user-title{
+  background-color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+}
+
 .dark-theme-form {
   display: flex;
   flex-direction: column;
