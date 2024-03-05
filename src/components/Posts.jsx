@@ -22,13 +22,13 @@ export default function Posts({id,title,body,onEdit,ondelete}) {
             //  </form>
             <tr>
                 <td colSpan="5">
-                    <form onSubmit={handleOnEditSubmit}>
-                        <input placeholder="Title" name="title" />
-                        <input placeholder="Body" name="body" />
-                        <button type='submit'>Save</button>
-                        <button type="button" onClick={() => setIsEdit(false)}>
-                        Cancel
-                        </button>
+                    <form onSubmit={handleOnEditSubmit} className='dark-theme-form'>
+                        <input placeholder="Title" name="title" className="dark-theme-input" />
+                        <input placeholder="Body" name="body" className="dark-theme-input"/>
+                        <div className='button-container'>
+                        <button type='submit' className="dark-theme-button save-button">Save</button>
+                        <button type="button" onClick={() => setIsEdit(false)} className="dark-theme-button cancel-button">Cancel</button>
+                        </div>
                     </form>
                 </td>
             </tr>
